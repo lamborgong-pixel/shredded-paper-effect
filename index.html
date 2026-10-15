@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shredline — 把秘密碎成纸屑</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Special+Elite&family=Share+Tech+Mono&family=Inter:wght@400;500;600;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== HERO: 碎纸机桌面场景 ===================== -->
+<section class="hero" id="hero">
+  <div class="desk" id="desk">
+    <div class="scene" id="scene">
+
+      <!--  Invoice  -->
+      <div class="doc invoice" id="doc-invoice" style="--r:-4deg; left:17%; top:30%;">
+        <div class="inv-head">
+          <span class="inv-title">Sandia Wash &amp; Detail</span>
+          <span class="inv-page">Page 14</span>
+        </div>
+        <table class="inv-table">
+          <tr class="th"><td>Date</td><td>Description</td><td class="amt">Amount</td></tr>
+          <tr><td>01.12</td><td>Full service, 14 cars</td><td class="amt">$1,829.00</td></tr>
+          <tr><td>01.13</td><td>Interior detail</td><td class="amt">$1,160.00</td></tr>
+          <tr class="hl"><td>01.13</td><td>Cash deposit</td><td class="amt">$48,000.00</td></tr>
+          <tr><td>01.14</td><td>Wax and polish</td><td class="amt">$2,340.00</td></tr>
+          <tr class="hl"><td>01.15</td><td>Fleet contract</td><td class="amt">$52,140.00</td></tr>
+          <tr><td>01.15</td><td>Cash receipts</td><td class="amt">$61,500.00</td></tr>
+          <tr><td>01.16</td><td>Full service, 22 cars</td><td class="amt">$7,460.00</td></tr>
+          <tr class="hl circle"><td>01.17</td><td>Undercoating</td><td class="amt">$94,900.00</td></tr>
+          <tr><td>01.19</td><td>Cash deposit</td><td class="amt">$88,400.00</td></tr>
+          <tr class="hl"><td>01.22</td><td>Detail package</td><td class="amt">$12,700.00</td></tr>
+          <tr class="hl"><td>01.23</td><td>Fleet contract</td><td class="amt">$128,900.00</td></tr>
+          <tr><td>01.24</td><td>Cash deposit</td><td class="amt">$1,925.00</td></tr>
+          <tr class="hl"><td>01.26</td><td>Full service, 9 cars</td><td class="amt">$104,900.00</td></tr>
+          <tr class="hl"><td>01.27</td><td>Consulting</td><td class="amt">$200,000.00</td></tr>
+          <tr class="total"><td colspan="2">Total</td><td class="amt">$1,284,000.00</td></tr>
+        </table>
+      </div>
+
+      <!--  Polaroid  -->
+      <div class="doc polaroid" id="doc-polaroid" style="--r:3deg; left:31%; top:20%;">
+        <div class="photo">
+          <div class="sky"></div>
+          <div class="sun"></div>
+          <div class="ground"></div>
+          <div class="van"><i class="van-body"></i><i class="van-cab"></i><i class="wheel w1"></i><i class="wheel w2"></i></div>
+        </div>
+        <div class="caption">Tuesday, 5:40 am</div>
+      </div>
+
+      <!--  Sticky note  -->
+      <div class="doc sticky" id="doc-sticky" style="--r:-3deg; left:63%; top:19%;">
+        <p class="sticky-big">Burn this.</p>
+        <p class="sticky-small">No copies, no backups.</p>
+      </div>
+
+      <!--  Consulting agreement  -->
+      <div class="doc agreement" id="doc-agreement" style="--r:3deg; left:86%; top:19%;">
+        <p class="ag-title">Consulting agreement</p>
+        <p class="ag-h">1. Services</p>
+        <div class="ln"></div><div class="ln"></div>
+        <p class="ag-h">2. Disclosure</p>
+        <div class="ln"></div><div class="ln short"></div>
+        <p class="ag-h">3. Payment</p>
+        <div class="ln"></div><div class="ln"></div><div class="ln short"></div>
+        <div class="sigs">
+          <div class="sig"><span class="sig-name blue">R. Whitlock</span><span class="sig-role">Client</span></div>
+          <div class="sig"><span class="sig-name">S. Moreno</span><span class="sig-role">Consultant</span></div>
+        </div>
+        <div class="seal"></div>
+      </div>
+
+      <!--  Wire confirmation  -->
+      <div class="doc wire" id="doc-wire" style="--r:-2deg; left:22%; top:72%;">
+        <div class="wire-head">
+          <span class="wire-logo"></span>
+          <span class="wire-brand">Halvorsen &amp; Pike<em>Private banking · Zürich</em></span>
+          <span class="wire-tag">Wire confirmation</span>
+        </div>
+        <p class="wire-label">Outgoing transfer</p>
+        <p class="wire-amount">$2,400,000.00</p>
+        <p class="wire-cur">USD</p>
+        <div class="ln"></div>
+        <p class="wire-row">Sandia Wash &amp; Detail LLC</p>
+        <p class="wire-row">Northgate Holdings Ltd.</p>
+        <p class="wire-row">Cayman Meridian Trust</p>
+        <div class="ln short"></div>
+        <p class="wire-row">Consulting services, Q3</p>
+        <p class="wire-row dim">September 28</p>
+        <p class="wire-row dim">HP 77 20410</p>
+        <div class="stamp approved">Approved</div>
+        <div class="barcode"></div>
+      </div>
+
+      <!--  Internal memo  -->
+      <div class="doc memo" id="doc-memo" style="--r:5deg; left:74%; top:72%;">
+        <svg class="clip" viewBox="0 0 24 60"><path d="M12 4 C6 4 4 9 4 14 L4 44 C4 52 10 56 14 54 C18 52 19 48 19 44 L19 16 C19 13 17 11 15 11 C13 11 11 13 11 16 L11 40" fill="none" stroke="#b9bcc2" stroke-width="2.4" stroke-linecap="round"/></svg>
+        <p class="memo-title">Internal memo</p>
+        <div class="memo-meta">
+          <p><b>To</b><span>Front office</span></p>
+          <p><b>From</b><span>S.</span></p>
+          <p><b>Date</b><span>Tuesday</span></p>
+          <p><b>Re</b><span>Tuesday delivery</span></p>
+        </div>
+        <div class="memo-rule"></div>
+        <p class="memo-body">Please make sure the <span class="redact w-m"></span> is ready before 6 am.</p>
+        <p class="memo-body">The truck comes through the <span class="redact w-s"></span>, not the front. Do not call <span class="redact w-l"></span> from the office line.</p>
+        <p class="memo-body">Keep the shredder running and the <span class="redact w-m"></span> down.</p>
+        <p class="memo-body">If anyone asks, we are closed for <span class="redact w-s"></span> inventory. Nobody stays after the delivery. Nobody talks about <span class="redact w-l"></span> again.</p>
+        <p class="memo-body">Thanks, S.</p>
+        <div class="stamp confidential">Confidential.</div>
+      </div>
+
+      <!--  Shredder  -->
+      <div class="shredder" id="shredder">
+        <div class="slot" id="slot"><i></i></div>
+        <div class="shred-brand">Shredline</div>
+        <div class="shred-panel">
+          <div class="lcd" id="lcd">00</div>
+          <div class="led" id="led"></div>
+        </div>
+      </div>
+
+      <p class="hint" id="hint">把一份文件拖进碎纸机</p>
+    </div>
+  </div>
+
+  <canvas id="confetti"></canvas>
+
+  <header class="hero-ui">
+    <div class="brand-mark">
+      <span class="bm-slot"></span>
+      <span>Shredline<span class="bm-sub">interactive desk</span></span>
+    </div>
+    <div class="hero-actions">
+      <span class="counter-pill"><i class="dot"></i>已粉碎 <b id="count-pill">0</b> / 6</span>
+      <button class="sound-toggle" id="sound-toggle" type="button" aria-label="切换音效">音效 关</button>
+    </div>
+  </header>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

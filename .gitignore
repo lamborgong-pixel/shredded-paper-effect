@@ -1,0 +1,15 @@
+# macOS and editor/runtime caches
+.DS_Store
+._*
+node_modules/
+.venv/
+__pycache__/
+*.py[cod]
+*.log
+.codex/
+.agents/
+
+# Local credentials (keep documentation examples)
+.env
+.env.*
+!.env.example
