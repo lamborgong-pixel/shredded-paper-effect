@@ -10,8 +10,6 @@
 
 ![Shredline 碎纸机交互演示](assets/demo/shredline-demo.gif)
 
-高清完整视频（44 秒，1280×720）见 [assets/demo/shredline-demo.mp4](assets/demo/shredline-demo.mp4)。
-
 ## 快速开始
 
 在项目根目录运行：
@@ -40,7 +38,7 @@ python3 -m http.server 8000
 | `index.html` | 页面结构，6 份文件与碎纸机的 DOM |
 | `script.js` | 拖拽交互、粉碎动画、粒子系统、视差与音效 |
 | `style.css` | 桌面场景、文件样式、碎纸机与各状态样式 |
-| `assets/demo/` | 演示动图、视频与封面 |
+| `assets/demo/` | 演示动图与封面 |
 | `assets/` | 赞赏码与联系方式二维码 |
 
 ## 实现说明
